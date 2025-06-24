@@ -32,3 +32,34 @@ let number = 2;
 
 let stringNum = String(number);
 console.log(stringNum, typeof stringNum);
+
+///////////////////////////////////   Operations //////////////////////////////////////////
+
+let value = 3;
+let negativeVal = -value;
+
+console.log(negativeVal);// o/p = -3
+
+
+let str1 = "hello";
+let str2 = " vasu";
+
+let str3 = str1 + str2;
+console.log(str3);
+
+console.log("1"+2); // o/p = 12
+console.log(1+2+"3"); // o/p = 33
+console.log("1"+2+3); // o/p = 123
+
+console.log(null > 0 ); // o/p = false
+console.log(null == 0); // o/p = false
+console.log(null >= 0); // o/p = true because an equality check (==) and comparison (>, <, >=, <=) work differently. Comparisons convert null to a number, treating it as 0. That's why last one null>=0 is true and  first null >0 is false.
+
+console.log(undefined == 0); // o/p = false for all three
+console.log(undefined > 0);
+console.log(undefined < 0);
+
+//===
+
+console.log("2"===2);
+
