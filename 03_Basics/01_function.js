@@ -46,3 +46,41 @@ console.log(loginUserMsg());      // it will return  "user just logged in " inst
 
 
 
+//#use of rest it looks similar to spread but work differently at different place
+function calculateCartPrice(...num1){ // here rest will add all elements in single array like [200,400,300]
+    return num1;
+}
+console.log(calculateCartPrice(200,400,300));
+
+function calCartPrice(val1,val2,...num1){
+    return num1;
+}
+console.log(calCartPrice(200,400,500,2000)); //o/p:- will be [500,2000] bcoz val1 have value 200, val2 have vlaue 400 and other will be in single array
+
+
+
+//#how to pass object in function
+const user = {
+    userName :"vasu",
+    price:124
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+handleObject(user);
+//or we can direct pass object also
+//handleObject({
+// userName:"sam",
+// price:399
+// });
+
+
+
+//#passing array in function
+const array = [200,300,500,5004];
+
+function returnSecondValue(getArray){
+    return getArray[2];
+}
+
+console.log(returnSecondValue(array));
