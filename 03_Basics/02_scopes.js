@@ -55,10 +55,21 @@ function addone(num){
     return num+1;
 }
 
-console.log(addtwo(4));    //here it will give error that intilization not done while above was giving correct output and only difference is in declaring function in this we take function output in variable
-const addtwo = function(num){
-    return num +2;
-}
+// console.log(addtwo(4));    //here it will give error that intilization not done while above was giving correct output and only difference is in declaring function in this we take function output in variable
+// const addtwo = function(num){
+//     return num +2;
+// }
 
 
+//Immediately Invoked Function Expressions (IIFE)
 
+//named IIFE
+(function fn(){
+    console.log(`DB connected`);
+})();
+
+//or
+//unamed IIFE
+((name) => {
+    console.log(`DB Connected with ${name}`);
+}) ('vasu')
