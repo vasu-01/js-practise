@@ -28,7 +28,7 @@ else{
 }
 
 
-//use of if else
+//use of if else in multiple checking
 
 const userLoggedIn  = true;
 const debitCard = true;
