@@ -36,3 +36,22 @@ const myCoding = [
 myCoding.forEach((item) =>{
     console.log(item.languageName);
 });
+
+
+const books = [
+    {title: 'Book One',genre: 'Fiction', publish: 1981,edition: 2006},
+    {title: 'Book two',genre: 'Non-Fiction', publish: 2000,edition: 2008},
+    {title: 'Book three',genre: 'History', publish: 2009,edition: 1999},
+    {title: 'Book four',genre: 'Science', publish: 1988,edition: 2000},
+    {title: 'Book five',genre: 'Physics', publish: 2005,edition: 2009},
+];
+
+//to find whose genre == history
+let userBooks = books.filter( (bk) => bk.genre === 'History');
+console.log(userBooks);
+
+//to check more then one condition
+userBooks = books.filter((bk) => {
+    return bk.publish >= 1995 && bk.genre === 'History';
+});
+console.log(userBooks);
